@@ -1,0 +1,253 @@
+/*總體基礎*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff29ec7;
+    background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    z-index: -99;
+}
+
+/*共用物件*/
+.line {
+    width: 750px;
+    height: 1px;
+    background-color: #000000;
+    justify-self: center;
+}
+
+.small-line {
+    width: 450px;
+    height: 1px;
+    background-color: #000000;
+
+}
+
+/*1280以上(電腦)標準*/
+/*字形設定*/
+.h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    margin: 0;
+}
+
+/*rwd基礎*/
+
+/*大圖*/
+.main-pic {
+    position: relative;
+    z-index: -999;
+    width: 1280px;
+    height: 450px;
+    overflow: hidden;
+}
+
+/*前導故事調整*/
+.story {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    position: relative;
+    background-position: center;
+    background-color: rgba(21, 21, 21, 0.6);
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    height: 110vh;
+    z-index: 1;
+}
+
+.story::after {
+    position: absolute;
+    content: "";
+    background-color: #fff29ec7;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+.story-h2 {
+    font-size: 2em;
+}
+
+.story-p {
+    text-align: center;
+}
+
+/*intro區域調整*/
+.intro {
+    position: relative;
+    height: 1405px;
+}
+
+.intro-box {
+    height: 356px;
+}
+
+.intro-img {
+    height: 356px;
+    overflow: hidden;
+}
+
+.intro-p {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.intro-p h2 {
+    font-style: italic;
+}
+
+@media screen and (max-width: 1280px) {
+
+    /*480以上(平板與筆電)標準*/
+    .col {
+        width: 100%;
+        padding: 0 10px
+    }
+
+    .row {
+        margin: 0 -10px
+    }
+
+    .col-md-11 {
+        width: 91.662%;
+    }
+
+    .col-md-10 {
+        width: 83.332%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-8 {
+        width: 66.662%;
+    }
+
+    .col-md-7 {
+        width: 58.331%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-5 {
+        width: 41.662%;
+    }
+
+    .col-md-4 {
+        width: 33.332%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-2 {
+        width: 16.662%;
+    }
+
+    .col-md-1 {
+        width: 8.332%;
+    }
+
+    .container {
+        width: 728px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*小於480(手機)標準*/
+    .col {
+        width: 100%;
+        padding: 0 10px
+    }
+
+    .row {
+        margin: 0 -10px
+    }
+
+    .col-xs-10 {
+        width: 83.332%;
+    }
+
+    .col-xs-9 {
+        width: 75%;
+    }
+
+    .col-xs-8 {
+        width: 66.662%;
+    }
+
+    .col-xs-7 {
+        width: 58.331%;
+    }
+
+    .col-xs-6 {
+        width: 50%;
+    }
+
+    .col-xs-5 {
+        width: 41.662%;
+    }
+
+    .col-xs-4 {
+        width: 33.332%;
+    }
+
+    .col-xs-3 {
+        width: 25%;
+    }
+
+    .col-xs-2 {
+        width: 16.662%;
+    }
+
+    .col-xs-1 {
+        width: 8.332%;
+    }
+
+    .container {
+        width: 320px;
+    }
+}
