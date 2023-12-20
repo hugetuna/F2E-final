@@ -4,8 +4,7 @@
 }
 
 html {
-    font-size: 20px;
-    box-sizing: border-box;
+    font-size: 14px;
 }
 
 body {
@@ -20,17 +19,10 @@ body {
     z-index: -99;
 }
 
-/*共用物件*/
-.line {
-    width: 50%;
-    height: 1px;
-    background-color: #000000;
-}
-
-/*1280以上(電腦)標準*/
+/*480以下(手機基礎)*/
 /*字形設定*/
 .h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: normal;
     margin: 0;
@@ -52,14 +44,33 @@ body {
     margin: 0;
 }
 
-/*rwd基礎*/
+/*共用物件*/
+.line {
+    width: 50%;
+    height: 1px;
+    background-color: #000000;
+}
+
+.titlebar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #784c25;
+}
+
+.titlebar h1 {
+    color: #fff29e;
+}
 
 /*大圖*/
 .main-pic {
     position: relative;
     z-index: -999;
-    width: 1280px;
-    height: 450px;
+    width: 480px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -105,30 +116,16 @@ body {
 /*intro區域調整*/
 .intro {
     position: relative;
-    height: 1468px;
+
 }
 
 .intro-box {
-    height: 356px;
+    height: 390px;
     justify-content: space-between;
 }
 
-/*各box位置*/
-.box-1 {
-    margin-top: 100px;
-}
-
-.box-2 {
-    margin-top: 150px;
-}
-
-.box-3 {
-    margin-top: 150px;
-    margin-bottom: 100px;
-}
-
 .intro-img {
-    height: 356px;
+    height: 190px;
     overflow: hidden;
 }
 
@@ -142,6 +139,612 @@ body {
     font-style: italic;
 }
 
-@media screen and (max-width: 1280px) {}
+/*intro區域調整-各box位置*/
+.box-1 {
+    margin-top: 100px;
+}
 
-@media screen and (max-width: 480px) {}
+.box-2 {
+    margin-top: 150px;
+}
+
+.box-2 .intro-img {
+    order: -1;
+}
+
+.box-3 {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+/*玩法介紹設定*/
+.Sys-block {
+    position: relative;
+    height: 2019px;
+}
+
+.opSys,
+.batSys,
+.itemSys {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 673px;
+    /*背景*/
+    background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
+    background-color: #fff29ec7;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    /*影子*/
+    box-shadow: 10px 10px 20px 10px rgba(6, 5, 5, 0.788);
+    z-index: 2;
+}
+
+/*切換按鈕的調整*/
+.switch-but-opSys {
+    cursor: pointer;
+    position: absolute;
+    left: -2px;
+    z-index: 4;
+}
+
+.switch-but-batSys {
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    z-index: 3;
+}
+
+.switch-but-itemSys {
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    z-index: 2;
+}
+
+.switch-but-speSys {
+    cursor: pointer;
+    position: absolute;
+    left: 60%;
+    z-index: 1;
+}
+
+.pickup {
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    top: -40px;
+    background-color: #fed843;
+    border-radius: 20% 20% 0 0;
+    border: 2px solid #1f1004e0;
+    border-bottom: 0;
+    z-index: 999;
+}
+
+.notpickup {
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    top: -30px;
+    background-color: #caae41;
+    border-radius: 20% 20% 0 0;
+    border: 2px solid #1f1004e0;
+    border-bottom: 0;
+    color: black;
+}
+
+/*玩法介紹-操作系統*/
+.opSys-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/*玩法介紹-操作系統-單個介紹框*/
+.opSys-aside {
+    display: flex;
+    height: 196px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.opSys-aside h2 {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+.opSys-aside p {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100px;
+    text-align: center;
+}
+
+.artical-picbox {
+    width: 40%;
+    height: 100px;
+    overflow: hidden;
+}
+
+/*玩法介紹-道具系統*/
+.itemSys-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/*玩法介紹-道具系統-單個介紹框*/
+.itemSys-aside {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 196px;
+}
+
+.itemSys-aside h2 {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+.itemSys-aside p {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100px;
+    text-align: center;
+}
+
+/*角色介紹設定*/
+.char-block {
+    height: 633px;
+    margin-top: 40px;
+}
+
+.show-box {
+    height: 159px;
+    margin-top: 50px;
+}
+
+.show-box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-pic {
+    height: 159px;
+    overflow: hidden;
+}
+
+.select-pic {
+    height: 0%;
+    cursor: pointer;
+}
+
+.select-picbox {
+    display: none;
+    height: 157px;
+    overflow: hidden;
+}
+
+/*關於我們設定*/
+.workplace-block {
+    margin-top: 40px;
+    height: 480px;
+}
+
+.workplace-main {
+    justify-content: center;
+    margin-top: 30px;
+    height: 400px;
+}
+
+.workplace-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 576px) {
+
+    /*576以上(平板電腦)標準*/
+    html {
+        font-size: 20px;
+    }
+
+    /*共用物件*/
+    .titlebar {
+        transform: translateX(-60%);
+        justify-content: end;
+        width: 100%;
+        height: 90px;
+        background-color: #784c25;
+    }
+
+    /*intro區域調整*/
+    .intro {
+        position: relative;
+
+    }
+
+    .intro-box {
+        height: 211px;
+        justify-content: space-between;
+    }
+
+    .intro-img {
+        height: 211px;
+        overflow: hidden;
+    }
+
+    .intro-p {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+    }
+
+    .intro-p h2 {
+        font-style: italic;
+    }
+
+    /*intro區域調整-各box位置*/
+    .box-1 {
+        margin-top: 100px;
+    }
+
+    .box-2 {
+        margin-top: 150px;
+    }
+
+    .box-2 .intro-img {
+        order: 0;
+    }
+
+    .box-3 {
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    /*玩法介紹調整*/
+    .Sys-block {
+        position: relative;
+        height: 3600px;
+    }
+
+    .opSys,
+    .batSys,
+    .itemSys {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        height: 1200px;
+        /*背景*/
+        background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
+        background-color: #fff29ec7;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        /*影子*/
+        box-shadow: 10px 10px 20px 10px rgba(6, 5, 5, 0.788);
+        z-index: 2;
+    }
+
+    /*角色介紹設定*/
+    .char-block {
+        height: 789px;
+        margin-top: 100px;
+    }
+
+    .show-box {
+        height: 362px;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+    .show-box p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .show-pic {
+        height: 362px;
+        overflow: hidden;
+    }
+
+    .select-pic {
+        justify-content: center;
+        height: 167px;
+        margin-top: 70px;
+        cursor: pointer;
+    }
+
+    .select-picbox {
+        display: block;
+        height: 167px;
+        overflow: hidden;
+    }
+
+    /*關於我們設定*/
+    .workplace-block {
+        margin-top: 100px;
+        height: 480px;
+    }
+
+    .workplace-main {
+        justify-content: center;
+        margin-top: 50px;
+        height: 260px;
+    }
+
+    .workplace-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*1200以上(電腦)標準*/
+
+    html {
+        font-size: 20px;
+    }
+
+    /*共用物件*/
+    .titlebar {
+        transform: translateX(-60%);
+        justify-content: end;
+        width: 100%;
+        height: 120px;
+        background-color: #784c25;
+    }
+
+    /*大圖*/
+    .main-pic {
+        position: relative;
+        z-index: -999;
+        width: 1280px;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    /*intro區域調整*/
+    .intro {
+        position: relative;
+        height: 1468px;
+    }
+
+    .intro-box {
+        height: 356px;
+        justify-content: space-between;
+    }
+
+    .intro-img {
+        height: 356px;
+        overflow: hidden;
+    }
+
+    /*intro區域調整-各box位置*/
+    .box-1 {
+        margin-top: 100px;
+    }
+
+    .box-2 {
+        margin-top: 150px;
+    }
+
+    .box-2 .intro-img {
+        order: 0;
+    }
+
+    .box-3 {
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+
+    /*玩法介紹設定*/
+    .Sys-block {
+        position: relative;
+        height: 3000px;
+    }
+
+    .opSys,
+    .batSys,
+    .itemSys {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        height: 1000px;
+        /*背景*/
+        background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
+        background-color: #fff29ec7;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        /*影子*/
+        box-shadow: 10px 10px 20px 10px rgba(6, 5, 5, 0.788);
+        z-index: 2;
+    }
+
+    /*切換按鈕的調整*/
+    .switch-but-opSys {
+        cursor: pointer;
+        position: absolute;
+        left: -2px;
+        z-index: 4;
+    }
+
+    .switch-but-batSys {
+        cursor: pointer;
+        position: absolute;
+        left: 12%;
+        z-index: 3;
+    }
+
+    .switch-but-itemSys {
+        cursor: pointer;
+        position: absolute;
+        left: 24%;
+        z-index: 2;
+    }
+
+    .switch-but-speSys {
+        cursor: pointer;
+        position: absolute;
+        left: 36%;
+        z-index: 1;
+    }
+
+    .pickup {
+        width: 180px;
+        height: 50px;
+        text-align: center;
+        top: -50px;
+        background-color: #fed843;
+        border-radius: 20% 20% 0 0;
+        border: 2px solid #1f1004e0;
+        border-bottom: 0;
+        z-index: 999;
+    }
+
+    .notpickup {
+        width: 180px;
+        height: 40px;
+        text-align: center;
+        top: -40px;
+        background-color: #caae41;
+        border-radius: 20% 20% 0 0;
+        border: 2px solid #1f1004e0;
+        border-bottom: 0;
+        color: black;
+    }
+
+    /*玩法介紹-操作系統*/
+    .opSys-h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 370px;
+    }
+
+    /*玩法介紹-操作系統-單個介紹框*/
+    .opSys-aside {
+        display: flex;
+        height: 320px;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .opSys-aside h2 {
+        width: 100%;
+        height: 74px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .opSys-aside p {
+        width: 60%;
+        height: 157px;
+        text-align: center;
+    }
+
+    .artical-picbox {
+        width: 40%;
+        height: 157px;
+        overflow: hidden;
+    }
+
+    /*玩法介紹-道具系統*/
+    .itemSys-h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 370px;
+    }
+
+    /*玩法介紹-道具系統-單個介紹框*/
+    .itemSys-aside {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        height: 320px;
+    }
+
+    .itemSys-aside h2 {
+        width: 100%;
+        height: 74px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .itemSys-aside p {
+        width: 60%;
+        height: 157px;
+        text-align: center;
+    }
+
+    /*角色介紹設定*/
+    .char-block {
+        height: 1007px;
+        margin-top: 90px;
+    }
+
+    .show-box {
+        margin-top: 120px;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .show-box p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .show-pic {
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .select-pic {
+        justify-content: center;
+        height: 197px;
+        margin-top: 70px;
+        cursor: pointer;
+    }
+
+    .select-picbox {
+        display: block;
+        height: 197px;
+        overflow: hidden;
+    }
+
+    /*關於我們設定*/
+    .workplace-block {
+        margin-top: 90px;
+        height: 653px;
+    }
+
+    .workplace-main {
+        justify-content: center;
+        margin-top: 120px;
+        height: 413px;
+    }
+
+    .workplace-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .workplace-aside h2,
+    .workplace-aside p {
+        text-align: left;
+    }
+}
