@@ -9,13 +9,52 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/07c5007509.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+    <script type="text/javascript" src="js/Sysblock.js"></script>
+    <script type="text/javascript" src="js/gsap.js"></script>
     <title>微塵童話</title>
 </head>
 
 <body>
+    <a href="#main-pic"><img src="img/Arrow circle up.png" alt="arrow" class="totop"></a>
+    <div id="nav" class="nav">
+        <ul class="nav-ul">
+            <li class="nav-li">
+                <a href="#story">
+                    <h2 class="h2">故事大綱</h2>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#intro">
+                    <h2 class="h2">前導介紹</h2>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#Sys-block-title">
+                    <h2 class="h2">玩法簡介</h2>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#char-block">
+                    <h2 class="h2">角色介紹</h2>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#workplace-block">
+                    <h2 class="h2">關於我們</h2>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#sup-block">
+                    <h2 class="h2">贊助我們</h2>
+                </a>
+            </li>
+        </ul>
+    </div>
     <div id="main-pic" class="main-pic">
-        <img class="main" src="img/test用.png" alt="大圖">
     </div>
     <article id="story" class="story">
         <h2 class="h2 story-h2">STORY</h2>
@@ -35,7 +74,7 @@
     </article>
     <div class="container">
         <article id="intro" class="intro">
-            <div class="intro-box box-1 row">
+            <div id="intro-box-1" class="intro-box box-1 row">
                 <img id="img1" src="img/test用.png" alt="介紹" class="intro-img col col-lg-6 col-md-6 col-12">
                 <div class="intro-p col col-lg-5 col-md-6 col-12">
                     <h2 class="h2">強烈的情感不只是生命能量<br>
@@ -51,7 +90,7 @@
                     </p>
                 </div>
             </div>
-            <div class="intro-box box-2 row">
+            <div id="intro-box-2" class="intro-box box-2 row">
                 <div class="intro-p col col-lg-5 col-md-6 col-12">
                     <h2 class="h2">探索微觀的現代社會<br>
                         體驗一場獨特的冒險</h2>
@@ -65,7 +104,7 @@
                 <img id="img2" src="img/test用.png" alt="介紹" class="intro-img col col-lg-6 col-md-6 col-12">
             </div>
 
-            <div class="intro-box box-3 row">
+            <div id="intro-box-3" class="intro-box box-3 row">
                 <img id="img3" src="img/test用.png" alt="介紹" class="intro-img col col-lg-6 col-md-6 col-12">
                 <div class="intro-p col col-lg-5 col-md-6 col-12">
                     <h2 class="h2">結識夥伴<br>
@@ -80,6 +119,9 @@
                 </div>
             </div>
         </article>
+    </div>
+    <div id="Sys-block-title" class="titlebar titlebar-char">
+        <h1 class="h1">玩法介紹</h1>
     </div>
     <div id="Sys-block" class="Sys-block container">
         <div id="but-opSys" class="switch-but-opSys  pickup">
@@ -149,13 +191,29 @@
         </article>
     </div>
 
-    <div class="char-block container">
+    <div id="char-block" class="char-block container">
         <div class="titlebar titlebar-char">
             <h1 class="h1">角色介紹</h1>
         </div>
         <div class="show-box row">
             <img id="show-pic" class="show-pic col col-lg-6 col-md-8 col-8" src="img/test用.png" alt="主圖">
-            <p class="p show-pic col col-lg-4 col-md-4 col-4">介紹文</p>
+            <p class="p show-pic col col-lg-4 col-md-4 col-4">
+                柴落地區擔當的拾物員之一，本作的主角，上任時滿腔熱血，以上級拾物員為目標，現在卻嚴重失去工作熱情，過著到處搜刮橡皮擦等簡單物件的軟爛生活。近期有著失眠的困擾。<br>
+                和其他拾物員一樣，飼養了一隻倉鼠作代步工具，名字叫疾風號，隨著主人的軟爛生活同步變胖了
+            </p>
+        </div>
+        <div class="spare-box row">
+            <img class="show-pic col col-lg-6 col-md-8 col-8" src="img/test用.png" alt="主圖">
+            <p class="p show-pic col col-lg-4 col-md-4 col-4">
+                派遣來柴落地區調查的上級拾物員，不苟言笑、才幹出眾，華麗的拆信刀是她標誌性的武器。似乎是自告奮勇前來搜查的，但一直擺著悲傷的神情。<br>
+                代步工具和他人不同，是實驗用的白鼠。
+            </p>
+        </div>
+        <div class="spare-box row">
+            <img class="show-pic col col-lg-6 col-md-8 col-8" src="img/test用.png" alt="主圖">
+            <p class="p show-pic col col-lg-4 col-md-4 col-4">
+                柴落分部的科研人員，科研人員是拾物員堅強的後盾，協助裝備的製造、改良。性格有些懦弱，講話有些結巴，也因此總是無法說服艾亞好好工作，另一個煩惱是容易因為名字被當成粗曠大叔。
+            </p>
         </div>
         <div id="select-pic" class="select-pic row">
             <img src="img/test用.png" alt="test" class="select-picbox col col-lg-2 col-md-3 col-12">
@@ -164,7 +222,7 @@
         </div>
     </div>
 
-    <div class="workplace-block container">
+    <div id="workplace-block" class="workplace-block container">
         <div class="titlebar titlebar-workplace">
             <h1 class="h1">關於我們</h1>
         </div>
@@ -179,13 +237,17 @@
             </div>
         </div>
     </div>
-    <div class="sup-block container">
-        <div class="titlebar titlebar-workplace">
+    <div id="sup-block" class="sup-block container">
+        <div class="titlebar titlebar-sup">
             <h1 class="h1">支持我們</h1>
         </div>
         <div class="sup-main row">
-            <img src="img/test用.png" alt="bar" class="col col-lg-1 col-md-1 col-3">
-            <div class="workplace-aside col col-lg-9 col-md-9 col-9">
+            <div class="bar-box col col-lg-1 col-md-1 col-1">
+                <div class="bar">
+
+                </div>
+            </div>
+            <div class="sup-aside col col-lg-9 col-md-9 col-9">
                 <h2 class="h2">150000:開發switch版</h2>
                 <h2 class="h2">100000:聲優腳色配音</h2>
                 <h2 class="h2">50000:開發換裝系統</h2>
@@ -194,6 +256,15 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-box">
+            <h2 class="h2 footer-h2">追蹤我們</h2>
+            <i class="fa-brands fa-facebook" style="color: #fff291;"></i>
+            <i class="fa-brands fa-twitter" style="color: #fff29e;"></i>
+            <i class="fa-brands fa-instagram" style="color: #fff29e;"></i>
+            <p class="p footer-p">copy right 2023@ LITTLE</p>
+        </div>
+    </footer>
 </body>
 
 </html>

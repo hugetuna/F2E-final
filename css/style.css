@@ -44,6 +44,16 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 /*共用物件*/
 .line {
     width: 50%;
@@ -65,13 +75,29 @@ body {
     color: #fff29e;
 }
 
+/*fix物件*/
+.totop {
+    position: fixed;
+    right: 5%;
+    top: 80%;
+    z-index: 1000;
+}
+
+.nav-li::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+}
+
 /*大圖*/
 .main-pic {
     position: relative;
     z-index: -999;
-    width: 480px;
-    height: 200px;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    background-image: url(../img/test用.png);
+    background-position: center;
 }
 
 /*前導故事調整*/
@@ -160,7 +186,8 @@ body {
 /*玩法介紹設定*/
 .Sys-block {
     position: relative;
-    height: 2019px;
+    height: 750px;
+    margin-top: 80px;
 }
 
 .opSys,
@@ -171,8 +198,8 @@ body {
     align-content: space-around;
     height: 673px;
     /*背景*/
-    background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
-    background-color: #fff29ec7;
+    background-image: url(../img/玩法系統用.jpg);
+    background-color: #fff7c6bb;
     background-blend-mode: multiply;
     background-attachment: fixed;
     /*影子*/
@@ -214,9 +241,12 @@ body {
     height: 40px;
     text-align: center;
     top: -40px;
-    background-color: #fed843;
+    background-image: url(../img/玩法系統用.jpg);
+    background-color: #fff7c6bb;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
     border-radius: 20% 20% 0 0;
-    border: 2px solid #1f1004e0;
+    border: 2px solid #463d34e0;
     border-bottom: 0;
     z-index: 999;
 }
@@ -226,9 +256,12 @@ body {
     height: 30px;
     text-align: center;
     top: -30px;
-    background-color: #caae41;
+    background-image: url(../img/玩法系統用.jpg);
+    background-color: #868267bb;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
     border-radius: 20% 20% 0 0;
-    border: 2px solid #1f1004e0;
+    border: 2px solid #463d34e0;
     border-bottom: 0;
     color: black;
 }
@@ -316,6 +349,10 @@ body {
     align-items: center;
 }
 
+.spare-box {
+    margin-top: 30px;
+}
+
 .show-pic {
     height: 159px;
     overflow: hidden;
@@ -336,6 +373,7 @@ body {
 .workplace-block {
     margin-top: 40px;
     height: 480px;
+
 }
 
 .workplace-main {
@@ -350,6 +388,69 @@ body {
     justify-content: center;
 }
 
+/*支持我們設定*/
+.sup-block {
+    margin-top: 40px;
+}
+
+.sup-main {
+    justify-content: center;
+    height: 730px;
+    margin-top: 30px;
+}
+
+.bar-box {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.sup-aside {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+/*footer的調整*/
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: #784c25;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 550px;
+}
+
+.footer-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    color: #fff29e;
+}
+
+.footer-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    color: #fff29e;
+}
+
+.fa-brands {
+    font-size: 2rem;
+}
+
+/*-------------------------------------------------------*/
 @media screen and (min-width: 576px) {
 
     /*576以上(平板電腦)標準*/
@@ -364,6 +465,11 @@ body {
         width: 100%;
         height: 90px;
         background-color: #784c25;
+    }
+
+    .titlebar h1 {
+        color: #fff29e;
+        padding-right: 20px;
     }
 
     /*intro區域調整*/
@@ -413,7 +519,8 @@ body {
     /*玩法介紹調整*/
     .Sys-block {
         position: relative;
-        height: 3600px;
+        height: 1360px;
+        margin-top: 100px;
     }
 
     .opSys,
@@ -424,9 +531,7 @@ body {
         align-content: space-around;
         height: 1200px;
         /*背景*/
-        background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
-        background-color: #fff29ec7;
-        background-blend-mode: multiply;
+        background-image: url(../img/玩法系統用.jpg);
         background-attachment: fixed;
         /*影子*/
         box-shadow: 10px 10px 20px 10px rgba(6, 5, 5, 0.788);
@@ -445,6 +550,13 @@ body {
         justify-content: center;
     }
 
+    .spare-box {
+        display: none;
+        margin-top: 120px;
+        justify-content: center;
+        height: 500px;
+    }
+
     .show-box p {
         display: flex;
         justify-content: center;
@@ -454,6 +566,11 @@ body {
     .show-pic {
         height: 362px;
         overflow: hidden;
+    }
+
+    .spare-pic {
+        display: none;
+        height: 159px;
     }
 
     .select-pic {
@@ -486,8 +603,71 @@ body {
         flex-direction: column;
         justify-content: center;
     }
+
+    /*支持我們設定*/
+    .sup-block {
+        margin-top: 100px;
+    }
+
+    .sup-main {
+        justify-content: center;
+        height: 700px;
+        margin-top: 100px;
+    }
+
+    .bar-box {
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+
+    .sup-aside {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    /*footer的調整*/
+    .footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        margin-top: 150px;
+        background-color: #784c25;
+    }
+
+    .footer-box {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        width: 550px;
+    }
+
+    .footer-h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        color: #fff29e;
+    }
+
+    .footer-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        color: #fff29e;
+    }
+
+    .fa-brands {
+        font-size: 3.5rem;
+    }
 }
 
+/*--------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
 
     /*1200以上(電腦)標準*/
@@ -505,13 +685,46 @@ body {
         background-color: #784c25;
     }
 
-    /*大圖*/
-    .main-pic {
-        position: relative;
-        z-index: -999;
-        width: 1280px;
-        height: 450px;
-        overflow: hidden;
+    .titlebar h1 {
+        color: #fff29e;
+        padding-right: 20px;
+    }
+
+    /*導覽條*/
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10%;
+        height: 60vh;
+        z-index: 1000;
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #52351c;
+    }
+
+    .nav-li::after {
+        position: absolute;
+        content: "";
+        background-color: #52351c;
+        width: 0;
+        height: 5px;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .nav-li:hover::after {
+        background-color: #52351c;
+        width: 65%;
+        height: 5px;
+        z-index: -1;
     }
 
     /*intro區域調整*/
@@ -552,7 +765,8 @@ body {
     /*玩法介紹設定*/
     .Sys-block {
         position: relative;
-        height: 3000px;
+        height: 1200px;
+        margin-top: 90px;
     }
 
     .opSys,
@@ -563,9 +777,7 @@ body {
         align-content: space-around;
         height: 1000px;
         /*背景*/
-        background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
-        background-color: #fff29ec7;
-        background-blend-mode: multiply;
+        background-image: url(../img/玩法系統用.jpg);
         background-attachment: fixed;
         /*影子*/
         box-shadow: 10px 10px 20px 10px rgba(6, 5, 5, 0.788);
@@ -606,9 +818,7 @@ body {
         height: 50px;
         text-align: center;
         top: -50px;
-        background-color: #fed843;
         border-radius: 20% 20% 0 0;
-        border: 2px solid #1f1004e0;
         border-bottom: 0;
         z-index: 999;
     }
@@ -618,9 +828,7 @@ body {
         height: 40px;
         text-align: center;
         top: -40px;
-        background-color: #caae41;
         border-radius: 20% 20% 0 0;
-        border: 2px solid #1f1004e0;
         border-bottom: 0;
         color: black;
     }
@@ -701,6 +909,13 @@ body {
         height: 500px;
     }
 
+    .spare-box {
+        display: none;
+        margin-top: 120px;
+        justify-content: center;
+        height: 500px;
+    }
+
     .show-box p {
         display: flex;
         justify-content: center;
@@ -746,5 +961,67 @@ body {
     .workplace-aside h2,
     .workplace-aside p {
         text-align: left;
+    }
+
+    /*支持我們設定*/
+    .sup-block {
+        margin-top: 90px;
+    }
+
+    .sup-main {
+        justify-content: center;
+        height: 750px;
+        margin-top: 120px;
+    }
+
+    .bar-box {
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+
+    .sup-aside {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+    /*footer的調整*/
+    .footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        width: 100%;
+        height: 250px;
+        background-color: #784c25;
+    }
+
+    .footer-box {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        width: 550px;
+    }
+
+    .footer-h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        color: #fff29e;
+    }
+
+    .footer-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        color: #fff29e;
+    }
+
+    .fa-brands {
+        font-size: 3.5rem;
     }
 }
