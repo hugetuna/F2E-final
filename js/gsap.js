@@ -79,13 +79,33 @@ $(document).ready(function () {
             gsap.to(this, 0.5, { scaleX: 1, scaleY: 1 });
         }
     );
-    $('#select-pic > .select-picbox').click(
-        function () {
-            let images = $(this).attr('src');
-            $('#show-pic').attr('src', images);
-        }
-    );
-
+    $("#char-select-1").click(function () {
+        const tl = gsap.timeline();
+        tl.to(".show", { duration: 0.5, opacity: 0, y: 100 })
+            .call(function () {
+                $(".show").addClass("noshow").removeClass("show");
+                $("#char-box-1").removeClass("noshow").addClass("show");
+            })
+            .fromTo("#char-box-1", { opacity: 0, y: 100 }, { duration: 0.5, opacity: 1, y: 0 });
+    });
+    $("#char-select-2").click(function () {
+        const tl = gsap.timeline();
+        tl.to(".show", { duration: 0.5, opacity: 0, y: 100 })
+            .call(function () {
+                $(".show").addClass("noshow").removeClass("show");
+                $("#char-box-2").removeClass("noshow").addClass("show");
+            })
+            .fromTo("#char-box-2", { opacity: 0, y: 100 }, { duration: 0.5, opacity: 1, y: 0 });
+    });
+    $("#char-select-3").click(function () {
+        const tl = gsap.timeline();
+        tl.to(".show", { duration: 0.5, opacity: 0, y: 100 })
+            .call(function () {
+                $(".show").addClass("noshow").removeClass("show");
+                $("#char-box-3").removeClass("noshow").addClass("show");
+            })
+            .fromTo("#char-box-3", { opacity: 0, y: 100 }, { duration: 0.5, opacity: 1, y: 0 });
+    });
     //支持我們調控
     let anime_supbar_scroll = gsap.timeline({
         scrollTrigger: {
@@ -98,5 +118,4 @@ $(document).ready(function () {
             id: "anime-supbar",
         },
     });
-    anime_supbar_scroll.to(".sup-bar", 2, { height: 675 });
 });

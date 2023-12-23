@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/outside/normalize.css">
+    <link rel="stylesheet" href="css/outside/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sponsor.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/07c5007509.js" crossorigin="anonymous"></script>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+
+    <!-- Add additional Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <!--自己的-->
+    <script type="module" src="js/firebase.js"></script>
+    <title>贊助我們</title>
+</head>
+
+<body>
+    <div class="frombox">
+        <form id="sponser-form">
+            <label for="name" class="h2">捐款人</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email" class="h2">電子郵件</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="cardnum" class="h2">信用卡號</label><br>
+            <input type="password" id="cardnum" name="cardnum" minlength="16" maxlength="19"
+                placeholder="xxxx-xxxx-xxxx-xxxx" required><br>
+
+            <label for="money" class="h2">捐款額</label><br>
+            <input type="number" id="money" name="money" min="100" max="150000" step="100" value="100" required><br>
+
+            <label for="message" class="h2">留下你的話</label><br>
+            <textarea id="message" name="message" maxlength="300" rows="10" cols="40">
+        </textarea><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <div id="sponser_box" class="sponser_box container">
+        <div id="sponser_box_row" class="sponser_box_row row">
+            <div class="singlebox col col-lg-4 col-md-6 col-12">
+                <h1 class="singlebox-name h1">許文慶</h1>
+                <p class="singlebox-comment p">很棒的美術</p>
+                <h2 class="singlebox-money h2">捐款額:10000</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-box">
+            <h2 class="h2 footer-h2">追蹤我們</h2>
+            <i class="fa-brands fa-facebook" style="color: rgb(235, 217, 176);"></i>
+            <i class="fa-brands fa-twitter" style="color: rgb(235, 217, 176);"></i>
+            <i class="fa-brands fa-instagram" style="color: rgb(235, 217, 176);"></i>
+            <p class="p footer-p">copy right 2023@ LITTLE</p>
+        </div>
+    </footer>
+</body>
+
+</html>

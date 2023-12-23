@@ -1,0 +1,172 @@
+/*總體基礎*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #120c00c7;
+    background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    z-index: -99;
+}
+
+/*字形設定*/
+.h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    color: rgb(235, 217, 176);
+}
+
+.h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+    color: rgb(235, 217, 176);
+}
+
+.p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    margin: 0;
+    color: rgb(235, 217, 176);
+}
+
+textarea {
+    resize: none;
+}
+
+/*表單*/
+.frombox {
+    margin-top: 30px;
+}
+
+/*留言板設定*/
+.sponser_box {
+    height: 640px;
+    margin-top: 50px;
+    overflow: scroll;
+}
+
+.sponser_box_row {
+    height: 640px;
+}
+
+.singlebox {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 320px;
+    border-radius: 20px;
+    background-color: rgba(213, 213, 213, 0.584);
+}
+
+.singlebox-name {
+    width: 80%;
+    height: 60px;
+}
+
+.singlebox-comment {
+    width: 80%;
+    height: 200px;
+}
+
+.singlebox-money {
+    align-self: flex-end;
+    text-align: end;
+    width: 60%;
+    height: 60px;
+}
+
+/*footer的調整*/
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: #2d0000;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 550px;
+}
+
+.footer-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+}
+
+.footer-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+}
+
+.fa-brands {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 20px;
+    }
+
+    /*footer的調整*/
+    .footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .footer-box {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        width: 550px;
+    }
+
+    .footer-h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+    }
+
+    .footer-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+    }
+
+    .fa-brands {
+        font-size: 3.5rem;
+    }
+}

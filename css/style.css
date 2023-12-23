@@ -26,6 +26,7 @@ body {
     font-weight: 700;
     line-height: normal;
     margin: 0;
+    padding: 0;
     color: rgb(235, 217, 176);
 }
 
@@ -38,6 +39,10 @@ body {
     color: rgb(235, 217, 176);
 }
 
+.darker-h2 {
+    color: rgba(227, 210, 171, 0.618);
+}
+
 .p {
     text-align: center;
     font-size: 1rem;
@@ -48,6 +53,7 @@ body {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: inherit;
 }
@@ -76,6 +82,10 @@ a:hover {
 
 .titlebar h1 {
     color: rgb(235, 217, 176);
+}
+
+.noshow {
+    display: flex;
 }
 
 /*fix物件*/
@@ -418,6 +428,12 @@ a:hover {
     margin-top: 30px;
 }
 
+.spare-box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .show-pic {
     height: 159px;
     overflow: hidden;
@@ -470,7 +486,7 @@ a:hover {
 .bar-box {
     position: relative;
     border-style: solid;
-    height: 90%;
+    height: 80%;
     padding: 0;
     border-width: 2px;
     border-radius: 50px;
@@ -487,10 +503,24 @@ a:hover {
 }
 
 .sup-aside {
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
+}
+
+.go-sup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #640000;
+    height: 5%;
+}
+
+.go-sup:hover {
+    cursor: pointer;
+    background-color: #2d0000;
 }
 
 /*footer的調整*/
@@ -548,6 +578,10 @@ a:hover {
 
     .titlebar h1 {
         padding-right: 20px;
+    }
+
+    .noshow {
+        display: none;
     }
 
     /*導覽條*/
@@ -671,16 +705,15 @@ a:hover {
     }
 
     .show-box {
-        height: 362px;
-        margin-top: 100px;
+        margin-top: 120px;
         justify-content: center;
+        height: 362px;
     }
 
     .spare-box {
-        display: none;
         margin-top: 120px;
         justify-content: center;
-        height: 500px;
+        height: 362px;
     }
 
     .show-box p {
@@ -695,7 +728,6 @@ a:hover {
     }
 
     .spare-pic {
-        display: none;
         height: 159px;
     }
 
@@ -1047,7 +1079,6 @@ a:hover {
     }
 
     .spare-box {
-        display: none;
         margin-top: 120px;
         justify-content: center;
         height: 500px;
@@ -1107,7 +1138,7 @@ a:hover {
 
     .sup-main {
         justify-content: center;
-        height: 750px;
+        height: 800px;
         margin-top: 120px;
     }
 

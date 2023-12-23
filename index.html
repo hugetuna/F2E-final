@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/outside/normalize.css">
+    <link rel="stylesheet" href="css/outside/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/outside/hamburgers.css">
+    <link rel="stylesheet" href="css/outside/hamburgers.scss">
     <link rel="stylesheet" href="css/burger.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -210,30 +211,31 @@
         <div class="titlebar titlebar-char">
             <h1 class="h1">角色介紹</h1>
         </div>
-        <div class="show-box row">
-            <img id="show-pic" class="show-pic col col-lg-6 col-md-8 col-8" src="img/test用.png" alt="主圖">
+        <div id="char-box-1" class="show-box show row">
+            <img class="show-pic col col-lg-6 col-md-8 col-8" src="img/test用.png" alt="主圖">
             <p class="p show-pic col col-lg-4 col-md-4 col-4">
-                柴落地區擔當的拾物員之一，本作的主角，上任時滿腔熱血，以上級拾物員為目標，現在卻嚴重失去工作熱情，過著到處搜刮橡皮擦等簡單物件的軟爛生活。近期有著失眠的困擾。<br>
+                柴落地區擔當的拾物員之一，本作的主角，嚴重失去工作熱情，過著到處搜刮橡皮擦等簡單物件的軟爛生活。近期有著失眠的困擾。<br>
                 和其他拾物員一樣，飼養了一隻倉鼠作代步工具，名字叫疾風號，隨著主人的軟爛生活同步變胖了
             </p>
         </div>
-        <div class="spare-box row">
+        <div id="char-box-2" class="spare-box noshow row">
             <img class="show-pic col col-lg-6 col-md-8 col-8" src="img/Twitter-sp.png" alt="主圖">
             <p class="p show-pic col col-lg-4 col-md-4 col-4">
-                派遣來柴落地區調查的上級拾物員，不苟言笑、才幹出眾，華麗的拆信刀是她標誌性的武器。似乎是自告奮勇前來搜查的，但一直擺著悲傷的神情。<br>
+                柴落地區調查的上級拾物員，不苟言笑、才幹出眾，華麗的拆信刀是她標誌性的武器。似乎是自告奮勇前來搜查的，但一直擺著悲傷的神情。<br>
                 代步工具和他人不同，是實驗用的白鼠。
             </p>
         </div>
-        <div class="spare-box row">
+        <div id="char-box-3" class="spare-box noshow row">
             <img class="show-pic col col-lg-6 col-md-8 col-8" src="img/comic.png" alt="主圖">
             <p class="p show-pic col col-lg-4 col-md-4 col-4">
-                柴落分部的科研人員，科研人員是拾物員堅強的後盾，協助裝備的製造、改良。性格有些懦弱，講話有些結巴，也因此總是無法說服艾亞好好工作，另一個煩惱是容易因為名字被當成粗曠大叔。
+                柴落分部的科研人員，協助裝備的製造、改良。性格有些懦弱，講話有些結巴，也因此總是無法說服艾亞好好工作，另一個煩惱是容易因為名字被當成粗曠大叔。
             </p>
         </div>
         <div id="select-pic" class="select-pic row">
-            <img src="img/test用.png" alt="test" class="select-picbox col col-lg-2 col-md-3 col-12">
-            <img src="img/Twitter-sp.png" alt="twi" class="select-picbox col col-lg-2 col-md-3 col-12">
-            <img src="img/comic.png" alt="comic" class="select-picbox col col-lg-2 col-md-3 col-12">
+            <img id="char-select-1" src="img/test用.png" alt="test" class="select-picbox col col-lg-2 col-md-3 col-12">
+            <img id="char-select-2" src="img/Twitter-sp.png" alt="twi"
+                class="select-picbox col col-lg-2 col-md-3 col-12">
+            <img id="char-select-3" src="img/comic.png" alt="comic" class="select-picbox col col-lg-2 col-md-3 col-12">
         </div>
     </div>
 
@@ -258,20 +260,25 @@
         </div>
         <div class="sup-main row">
             <div class="bar-box col col-lg-1 col-md-1 col-1">
-                <div class="sup-bar">
+                <div id="sup-bar" class="sup-bar">
 
                 </div>
             </div>
             <div class="sup-aside col col-lg-9 col-md-9 col-9">
-                <h2 class="h2">150000:開發switch版</h2>
-                <h2 class="h2">100000:聲優腳色配音</h2>
-                <h2 class="h2">50000:開發換裝系統</h2>
-                <h2 class="h2">30000:開發對戰模式</h2>
-                <h2 class="h2">10000:所有贊助者小禮物到府</h2>
+                <h2 id="15-h2" class="h2 sup-h2">150000:開發switch版</h2>
+                <h2 id="12-h2" class="h2 sup-h2">120000:聲優腳色配音</h2>
+                <h2 id="9-h2" class="h2 sup-h2">90000:開發換裝系統</h2>
+                <h2 id="6-h2" class="h2 sup-h2">60000:開發對戰模式</h2>
+                <h2 id="3-h2" class="h2 sup-h2">30000:所有贊助者小禮物到府</h2>
             </div>
+            <a href="/sponsor.html" class="go-sup col col-lg-3 col-md-3 col-3">
+                <div class="go-sup">
+                    <h2 class="h2">馬上支持</h2>
+                </div>
+            </a>
         </div>
     </div>
-    <div id="test">1222325</div>
+    <div id="money" class="h1">1000</div>
     <footer class="footer">
         <div class="footer-box">
             <h2 class="h2 footer-h2">追蹤我們</h2>
