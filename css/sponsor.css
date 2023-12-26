@@ -49,6 +49,19 @@ textarea {
     resize: none;
 }
 
+/*back按鈕*/
+.back {
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    background-color: #640000;
+    z-index: 1000;
+}
+
+.back:hover {
+    background-color: #2d0000;
+}
+
 /*表單*/
 .frombox {
     margin-top: 30px;

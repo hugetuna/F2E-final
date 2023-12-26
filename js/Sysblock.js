@@ -27,16 +27,14 @@ const opSys =
                     騰空飛起的超能力，酣暢淋漓的戰鬥，流行於校園的這本漫畫承載的不只是故事，還有夢想。<br>
                     (解鎖二段跳)
                 </p>
-                <div class="artical-picbox">
-                    <img src="img/comic.png" alt="comic">
-                </div>
+                <img src="img/comic.png" alt="comic" class="artical-picbox">
             </aside>
             <aside class="opSys-aside col col-lg-5 col-md-9 col-12">
                 <h2 class="h2">牽繩</h2>
                 <p>樸素的狗用牽繩，斑駁的破損是主人責任的證明。<br>
                     (可以瞄準空中的錨點並移動)
                 </p>
-                <div class="artical-picbox"><img src="img/Knot-a-Leash.jpg" alt="rope"></div>
+                <img src="img/Knot-a-Leash.jpg" alt="rope" class="artical-picbox">
             </aside>
             <h2 class="h2">還有更多等待著你發覺。</h2>
         </article>
@@ -90,12 +88,12 @@ const itemSys =
             <aside class="itemSys-aside col col-lg-5 col-md-9 col-12">
                 <h2 class="h2">橡皮筋槍</h2>
                 <p>橡皮筋沒辦法蘊含太多的感情，但橡皮筋射在身上的感受真的只能說痛。累積勢能，轉換動能，童年殺器。</p>
-                <div class="artical-picbox"><img src="img/橡皮筋槍.jpg" alt="橡皮筋槍"></div>
+                <img src="img/橡皮筋槍.jpg" alt="橡皮筋槍" class="artical-picbox">
             </aside>
             <aside class="itemSys-aside col col-lg-5 col-md-9 col-12">
                 <h2 class="h2">分針與時針</h2>
                 <p>將鬧鐘上的部件拆解下來製成的武器，時間總是能給人許多教訓。</p>
-                <div class="artical-picbox"><img src="img/時針與分針.jpg" alt="指針"></div>
+                <img src="img/時針與分針.jpg" alt="指針" class="artical-picbox">
             </aside>
             <h2 class="h2">還有更多等待著你發覺。</h2>
         </article>
