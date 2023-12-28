@@ -23,7 +23,7 @@ $(document).ready(function () {
         "name": "Aan",
         "email": "197297@gmail.com",
         "cardnum": "0000111122223333",
-        "money": 50000,
+        "money": 20000,
         "comment": "cool",
         "timeStamp": Date.now()
     }).then(() => {
