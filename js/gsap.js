@@ -68,7 +68,7 @@ $(document).ready(function () {
     anime_introbox3_scroll.from("#intro-box-3", 1.5, { opacity: 0, y: 200, ease: "power3.out" });
 
     anime_nav_scroll.from("#nav", 0.5, { opacity: 0 });
-
+    anime_nav_scroll.to("#logo", 0.5, { opacity: 0 });
 
     //角色介紹區調控
     $('#select-pic > .select-picbox').hover(
