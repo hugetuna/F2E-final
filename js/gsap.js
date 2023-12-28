@@ -24,7 +24,7 @@ $(document).ready(function () {
             start: "top bottom",
             end: "bottom bottom",
             scrub: false,
-            markers: true,
+            markers: false,
             id: "anime-intro-box-1",
         },
     });
@@ -35,7 +35,7 @@ $(document).ready(function () {
             start: "top bottom",
             end: "bottom bottom",
             scrub: false,
-            markers: true,
+            markers: false,
             id: "anime-intro-box-2",
         },
     });
@@ -46,7 +46,7 @@ $(document).ready(function () {
             start: "top bottom",
             end: "bottom bottom",
             scrub: false,
-            markers: true,
+            markers: false,
             id: "anime-intro-box-3",
         },
     });
@@ -57,7 +57,7 @@ $(document).ready(function () {
             start: "top bottom",
             end: "center bottom",
             scrub: true,
-            markers: true,
+            markers: false,
             id: "anime-nav",
         },
     });
@@ -114,7 +114,7 @@ $(document).ready(function () {
             start: "center bottom",
             end: "bottom bottom",
             scrub: false,
-            markers: true,
+            markers: false,
             id: "anime-supbar",
         },
     });
